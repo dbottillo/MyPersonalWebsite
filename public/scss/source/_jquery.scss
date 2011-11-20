@@ -1,0 +1,68 @@
+.ui-dialog-titlebar{
+	border-radius: 0px !important;
+	border: 0px !important;
+	background: none !important;
+}
+
+.ui-dialog{
+	@include light-gradient;
+    color: $grey-dark !important;
+}
+
+.ui-widget-header .ui-icon{
+	background-image: url(../images/ics.png) !important;
+	background-position: 0px 0px !important;
+}
+
+
+.ui-dialog-title{
+    @include title(14px);
+}
+
+.buttonInsidePopup, .ui-button{
+    @extend .button;
+}
+
+.buttonInsidePopup:hover, .ui-button:hover{
+    border: 1px solid $grey-dark;
+}
+
+.ui-button{
+    @include button-light(75px, 25px);
+    border: 0px !important;
+}
+
+
+.ui-datepicker-trigger{
+	position: relative; top: 3px; left: 5px;
+    cursor: pointer;
+}
+
+
+.ui-datepicker-prev .ui-icon{
+	background-image: url(../images/sinistra.png) !important;
+}
+
+.ui-datepicker-next .ui-icon{
+	background-image: url(../images/destra.png) !important;
+}
+
+.ui-datepicker .ui-widget-header{
+	border: 1px solid #444;
+	@include blu-gradient;
+}
+
+.ui-datepicker .ui-state-highlight{
+	border: 1px solid #444 !important;
+	color: white !important;
+}
+
+.ui-datepicker .ui-state-hover{
+	border: 1px solid red !important;
+	color: white !important;
+}
+
+.ui-datepicker .ui-state-active{
+	color: red !important;
+}
+

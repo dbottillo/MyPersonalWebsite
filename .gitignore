@@ -1,0 +1,6 @@
+public/scss/.sass-cache/
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/
+tmp/

@@ -1,0 +1,53 @@
+<!DOCTYPE>
+<html>
+    <%= render :partial => "head", :locals => { :type => 0 } %>
+    
+    <body>
+        
+        <div class="container">
+	
+			<div id="home">
+	        	<%= render :partial => "header", :locals => { :type => 0 } %>
+
+			
+				<div class="left">
+					<div>
+						<b>Email</b>: dbottillo[at]gmail[dot]com <br/>
+						<b>Location</b>: Bologna, ITALY
+					</div>
+					<a href="#work" id="toWork">
+						My Work
+					</a>
+				</div>
+			
+				<div class="right">
+					<span class="titleBig">Hello! I am Daniele</span><br/><br/>
+					I was born in Bologna, Italy where actually i'm working. I have a degree in Computer Science.
+					<br/><br/><br/>
+					<span class="titleBig">My Skills</span><br/><br/>
+					I specialize in web and mobile development. I’m an expert of several of web languages: Javascript, HTML, CSS, PHP,  RubyOnRails, etc... . 
+					I’m also a Sencha developer and i know Java, Android and Objective C for the mobile world.
+				</div>
+			
+				<div class="bottom"></div>
+			
+			</div>
+			
+			<div id="work">
+				<div>
+					<img src="/images/up.png" style="position: absolute; top: 20px; left: 150px;"/> Home
+				</div>
+				<%= render :partial => "header", :locals => { :type => 1 } %>
+				<span style="color: white">work</span>
+				<br/><br/><br/>	<br/><br/><br/><br/>
+				<div class="right">
+					
+					</div>
+			</div>
+        
+        
+        	<%= render :partial => "footer", :locals => { :type => 0 } %>
+
+		</div>
+    </body>
+</html>

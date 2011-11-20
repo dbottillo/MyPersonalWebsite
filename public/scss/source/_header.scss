@@ -1,0 +1,158 @@
+.header{
+    width: 1044px;
+    height: 45px;
+    margin: 0px auto;
+    position: relative;
+	top: 20px;
+	padding: 10px 20px;
+	background: rgba(255,255,255,0.99);
+	z-index: -20;
+	font-size: 50px;
+	color: $dark-color;
+	text-shadow: lighten($dark-color, 10) 1px 1px 1px;
+}
+
+.type1{
+	height:20px;
+	top: 0px;
+}
+
+.header nav{
+    float: right;
+    position: relative;
+    top: 23px;
+    right: 25px;
+    font-family: 'Droid sans mono', sans-serif;
+}
+
+.header nav a div{
+    color: #333;
+    font-size: 24px;
+    float: left;
+    margin-left: 40px;
+}
+
+.active, .header nav a div:hover{
+    border-bottom: 7px solid $blu-active;
+}
+
+.divider{
+    height: 5px;
+    width: 100%;
+    margin: 0px auto;
+	padding-left: 25px;
+	font-family: 'Gochi Hand', cursive;
+}
+
+.divider span{
+	float: right;
+	font-size: 20px;
+	top: -10px;
+	display: block;
+	position: relative;
+	right: 40px;
+	color: $dark-color;
+}
+
+.header img{
+    position: relative;
+    top: 10px;
+}
+
+/*div#subup{
+	@include dark-gradient;
+	width: 100%;
+	border-bottom: 5px solid $blu-light;
+}
+
+div#up{
+	width: 95%;
+	height: 40px;
+	background-image: url('../images/logo.png');
+	background-repeat: no-repeat;
+	background-position: center right;
+	margin: 0px auto;
+	@include flex-horizontal;
+}
+
+
+.inactive{
+    color: $grey-dark;
+    width: 162px;
+    height: 15px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 13px;
+    position: relative;
+    top: 10px;
+    width: 120px;
+    padding: 3px 0px;
+    @include light-gradient;
+}
+
+.inactive:hover{
+    @include blu-gradient;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.active{
+    border: 0px;
+    width: 130px;
+    height: 33px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 7px;
+    @include blu-gradient;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.inactiveLeft{
+    @extend .inactive;
+    border-top-left-radius: 5px;
+}
+
+.inactiveRight{
+    @extend .inactive;
+    border-top-right-radius: 5px;
+}
+
+.activeLeft{
+    @extend .active;
+}
+
+.activeRight{
+    @extend .active;
+}
+
+.lang{
+    width: 15px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.logout{
+	height: 25px;
+	margin-left: 15px;
+	margin-top: 15px;
+}
+
+.containerHint{
+    @extend .flex;
+    margin-right: 200px;
+}
+
+.hint{
+    @include hint-error;
+    height: 32px; 
+    font-weight: bold;
+    color: white;
+    padding: 4px;
+    width: 100%;
+}
+
+.hintNormal{
+    @include hint-ok;
+}*/
