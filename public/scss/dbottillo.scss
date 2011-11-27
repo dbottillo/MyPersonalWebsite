@@ -8,6 +8,9 @@ $blu-active: #2D96FF;
 $color-active: #336699;
 $color-active: #FFF;
 
+@import 'source/reset';
 @import 'source/mixin';
 @import 'source/base';
 @import 'source/header';
+@import 'source/aboutme';
+@import 'source/portfolio';

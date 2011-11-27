@@ -1,13 +1,12 @@
 .header{
     width: 1044px;
-    height: 45px;
+    height: 40px;
     margin: 0px auto;
     position: relative;
 	top: 20px;
 	padding: 10px 20px;
 	background: rgba(255,255,255,0.99);
-	z-index: -20;
-	font-size: 50px;
+	font-size: 47px;
 	color: $dark-color;
 	text-shadow: lighten($dark-color, 10) 1px 1px 1px;
 }
@@ -17,25 +16,61 @@
 	top: 0px;
 }
 
-.header nav{
+nav{
     float: right;
     position: relative;
-    top: 23px;
+    top: 18px;
     right: 25px;
     font-family: 'Droid sans mono', sans-serif;
 }
 
-.header nav a div{
-    color: #333;
-    font-size: 24px;
+.type1 nav{
+	top: -2px;
+}
+
+nav div{
+    top: 6px;
+	position: relative;
+    font-size: 20px;
     float: left;
     margin-left: 40px;
+	cursor: pointer;
+	cursor: hand;
+
 }
 
-.active, .header nav a div:hover{
-    border-bottom: 7px solid $blu-active;
+nav div:hover{
+    border-bottom: 5px solid $blu-active;
+	color: $blu-active;
 }
 
+nav div.active{
+	position: relative;
+	font-size: 24px;
+	cursor: default;
+	top: 0px;
+    border-bottom: 4px solid $blu-active;
+	color: $blu-active;
+}
+
+nav div:hover{
+    border-bottom: 4px solid $blu-active;
+	color: $blu-active;
+}
+
+
+
+.header span{
+	float: right;
+	font-size: 20px;
+	display: block;
+	position: relative;
+	right: 40px;
+	color: $dark-color;
+}
+
+
+/*
 .divider{
     height: 5px;
     width: 100%;
@@ -43,23 +78,12 @@
 	padding-left: 25px;
 	font-family: 'Gochi Hand', cursive;
 }
-
-.divider span{
-	float: right;
-	font-size: 20px;
-	top: -10px;
-	display: block;
-	position: relative;
-	right: 40px;
-	color: $dark-color;
-}
-
 .header img{
     position: relative;
     top: 10px;
 }
 
-/*div#subup{
+div#subup{
 	@include dark-gradient;
 	width: 100%;
 	border-bottom: 5px solid $blu-light;

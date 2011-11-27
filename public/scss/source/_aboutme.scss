@@ -1,0 +1,53 @@
+.left{
+    width: 468px;
+    height: 400px;
+    float: left;
+	position: absolute;
+	background-image: url('/images/table.png');
+}
+
+.left div:first-child{
+	font-size: 22px;
+	color: $dark-color;
+	font-family: 'Gochi Hand', cursive;
+	top: 130px;
+	position: relative;
+	left: 80px;
+	@include text-rotate(2deg);
+}
+
+.left div:nth-child(2){
+	display: block;
+	font-size: 22px;
+	color: white;
+	text-shadow: 1px 1p 1px black;
+	font-family: 'Gochi Hand', cursive;
+	top: 285px;
+	position: relative;
+	left: 270px;
+	cursor: pointer;
+	cursor: hand;
+	@include text-rotate(2deg);
+}
+
+.left div:nth-child(2):hover{
+	top: 290px;
+	left: 275px;
+	@include text-rotate(4deg);
+}
+
+.right{
+    width: 580px;
+    height: 1000px;
+	position: relative;
+	top: 30px;
+	left: 495px;
+	color: white;
+	font-size: 18px;
+	line-height: 130%;
+	text-align: right;
+}
+
+.bottom{
+    clear: both;
+}

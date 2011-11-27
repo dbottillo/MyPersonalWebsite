@@ -8,11 +8,44 @@ $(document).ready(function(){
 	 * @see http://flesler.demos.com/jquery/scrollTo/
 	 * You can use EVERY single setting of jQuery.ScrollTo, in the settings hash you send to jQuery.LocalScroll.
 	 */
-		
+	
+	console.log(window.location.hash);
+	switch (window.location.hash) {
+		case "#portfolio":
+			toWork();
+			break;
+		default:
+			toHome();
+			break;
+	}
+	
 	$('#toWork').click(function(){
-		$.scrollTo('#work', {duration: 1000});		
+
+		toWork();
+	});
+	
+	$('#toHome').click(function(){
+		toHome();
 	});
 	
 
 	
 });
+
+function toHome(){
+	$.scrollTo('#home', {duration: 700, 
+		onAfter:
+		function(){
+			window.location.hash = "";
+		}
+	});
+}
+
+function toWork(){
+	$.scrollTo('#work', {duration: 700, 
+		onAfter:
+		function(){
+			window.location.hash = "portfolio";
+		}
+	});
+}

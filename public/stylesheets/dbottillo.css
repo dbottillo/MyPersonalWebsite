@@ -1,3 +1,65 @@
+/* line 8, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* remember to define focus styles! */
+/* line 20, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_reset.scss */
+:focus {
+  outline: 0;
+}
+
+/* line 23, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_reset.scss */
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+/* line 28, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+/* line 32, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_reset.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* line 36, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_reset.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+
+/* line 41, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+
+/* line 44, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_reset.scss */
+blockquote, q {
+  quotes: "" "";
+}
+
 /*@mixin dark-gradient {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$grey-light), color-stop(100%,$grey-dark)) !important;
 }
@@ -26,30 +88,32 @@
     background-color: red;
 }
 */
-/* line 1, /Users/danielebottillo/Documents/mywebsite/public/scss/source/_base.scss */
+/* line 1, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_base.scss */
 body {
   margin: 0px !important;
   padding: 0;
   font-family: 'Helvetica Neue', 'Droid sans mono', sans-serif;
   font-size: 10px;
   background: url("/images/bg.jpg") repeat-x fixed center top;
-  /*	background: url('/images/bg2.jpg') repeat-x fixed center top;*/
+  /*		background-color: black;
+  	background-image: url('/images/prova.png');
+  	background-repeat: no-repeat; 
+  	repeat-x fixed center top;*/
   color: white;
-  color: #333;
 }
 
-/* line 12, /Users/danielebottillo/Documents/mywebsite/public/scss/source/_base.scss */
+/* line 14, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_base.scss */
 a {
   text-decoration: none;
   color: white;
 }
 
-/* line 17, /Users/danielebottillo/Documents/mywebsite/public/scss/source/_base.scss */
+/* line 19, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_base.scss */
 a:hover {
   color: white;
 }
 
-/* line 21, /Users/danielebottillo/Documents/mywebsite/public/scss/source/_base.scss */
+/* line 23, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_base.scss */
 h1 {
   color: white;
   color: #333;
@@ -61,7 +125,7 @@ h1 {
   /* font-family: 'Helvetica', 'Droid sans mono', sans-serif;*/
 }
 
-/* line 32, /Users/danielebottillo/Documents/mywebsite/public/scss/source/_base.scss */
+/* line 34, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_base.scss */
 h2 {
   color: #033568;
   font-size: 18px;
@@ -71,90 +135,20 @@ h2 {
   line-height: 130%;
 }
 
-/* line 41, /Users/danielebottillo/Documents/mywebsite/public/scss/source/_base.scss */
+/* line 43, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_base.scss */
 p {
   color: white;
   color: #333;
   font-size: 12px;
 }
 
-/* line 47, /Users/danielebottillo/Documents/mywebsite/public/scss/source/_base.scss */
+/* line 49, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_base.scss */
 .container {
   width: 1084px;
   margin: 0px auto;
 }
 
-/* line 52, /Users/danielebottillo/Documents/mywebsite/public/scss/source/_base.scss */
-.left {
-  width: 468px;
-  height: 400px;
-  float: left;
-  background-image: url("/images/table.png");
-}
-
-/* line 59, /Users/danielebottillo/Documents/mywebsite/public/scss/source/_base.scss */
-.left div:first-child {
-  font-size: 22px;
-  color: #033568;
-  font-family: 'Gochi Hand', cursive;
-  top: 130px;
-  position: relative;
-  left: 80px;
-  -webkit-transform: rotate(2deg);
-  -moz-transform: rotate(2deg);
-  -ms-transform: rotate(2deg);
-  -o-transform: rotate(2deg);
-  transform: rotate(2deg);
-}
-
-/* line 69, /Users/danielebottillo/Documents/mywebsite/public/scss/source/_base.scss */
-.left a:nth-child(2) {
-  display: block;
-  font-size: 22px;
-  color: white;
-  text-shadow: 1px 1p 1px black;
-  font-family: 'Gochi Hand', cursive;
-  top: 285px;
-  position: relative;
-  left: 270px;
-  -webkit-transform: rotate(2deg);
-  -moz-transform: rotate(2deg);
-  -ms-transform: rotate(2deg);
-  -o-transform: rotate(2deg);
-  transform: rotate(2deg);
-}
-
-/* line 81, /Users/danielebottillo/Documents/mywebsite/public/scss/source/_base.scss */
-.left a:nth-child(2):hover {
-  top: 290px;
-  left: 275px;
-  -webkit-transform: rotate(4deg);
-  -moz-transform: rotate(4deg);
-  -ms-transform: rotate(4deg);
-  -o-transform: rotate(4deg);
-  transform: rotate(4deg);
-}
-
-/* line 87, /Users/danielebottillo/Documents/mywebsite/public/scss/source/_base.scss */
-.right {
-  width: 580px;
-  float: left;
-  height: 600px;
-  position: relative;
-  top: 40px;
-  left: 20px;
-  color: white;
-  font-size: 18px;
-  line-height: 130%;
-  text-align: right;
-}
-
-/* line 100, /Users/danielebottillo/Documents/mywebsite/public/scss/source/_base.scss */
-.bottom {
-  clear: both;
-}
-
-/* line 104, /Users/danielebottillo/Documents/mywebsite/public/scss/source/_base.scss */
+/* line 54, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_base.scss */
 .footer {
   bottom: 0px;
   width: 1000px;
@@ -168,7 +162,7 @@ p {
   top: 20px;
 }
 
-/* line 117, /Users/danielebottillo/Documents/mywebsite/public/scss/source/_base.scss */
+/* line 67, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_base.scss */
 .titleBig {
   font-size: 22px px;
   color: white;
@@ -314,76 +308,97 @@ div#down{
 .helpDiv a:hover{
     color: $blu-dark;
 }*/
-/* line 1, /Users/danielebottillo/Documents/mywebsite/public/scss/source/_header.scss */
+/* line 1, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_header.scss */
 .header {
   width: 1044px;
-  height: 45px;
+  height: 40px;
   margin: 0px auto;
   position: relative;
   top: 20px;
   padding: 10px 20px;
   background: rgba(255, 255, 255, 0.99);
-  z-index: -20;
-  font-size: 50px;
+  font-size: 47px;
   color: #033568;
   text-shadow: #044e9a 1px 1px 1px;
 }
 
-/* line 15, /Users/danielebottillo/Documents/mywebsite/public/scss/source/_header.scss */
+/* line 14, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_header.scss */
 .type1 {
   height: 20px;
   top: 0px;
 }
 
-/* line 20, /Users/danielebottillo/Documents/mywebsite/public/scss/source/_header.scss */
-.header nav {
+/* line 19, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_header.scss */
+nav {
   float: right;
   position: relative;
-  top: 23px;
+  top: 18px;
   right: 25px;
   font-family: 'Droid sans mono', sans-serif;
 }
 
-/* line 28, /Users/danielebottillo/Documents/mywebsite/public/scss/source/_header.scss */
-.header nav a div {
-  color: #333;
-  font-size: 24px;
+/* line 27, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_header.scss */
+.type1 nav {
+  top: -2px;
+}
+
+/* line 31, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_header.scss */
+nav div {
+  top: 6px;
+  position: relative;
+  font-size: 20px;
   float: left;
   margin-left: 40px;
+  cursor: pointer;
+  cursor: hand;
 }
 
-/* line 35, /Users/danielebottillo/Documents/mywebsite/public/scss/source/_header.scss */
-.active, .header nav a div:hover {
-  border-bottom: 7px solid #2d96ff;
+/* line 42, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_header.scss */
+nav div:hover {
+  border-bottom: 5px solid #2d96ff;
+  color: #2d96ff;
 }
 
-/* line 39, /Users/danielebottillo/Documents/mywebsite/public/scss/source/_header.scss */
-.divider {
-  height: 5px;
-  width: 100%;
-  margin: 0px auto;
-  padding-left: 25px;
-  font-family: 'Gochi Hand', cursive;
+/* line 47, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_header.scss */
+nav div.active {
+  position: relative;
+  font-size: 24px;
+  cursor: default;
+  top: 0px;
+  border-bottom: 4px solid #2d96ff;
+  color: #2d96ff;
 }
 
-/* line 47, /Users/danielebottillo/Documents/mywebsite/public/scss/source/_header.scss */
-.divider span {
+/* line 56, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_header.scss */
+nav div:hover {
+  border-bottom: 4px solid #2d96ff;
+  color: #2d96ff;
+}
+
+/* line 63, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_header.scss */
+.header span {
   float: right;
   font-size: 20px;
-  top: -10px;
   display: block;
   position: relative;
   right: 40px;
   color: #033568;
 }
 
-/* line 57, /Users/danielebottillo/Documents/mywebsite/public/scss/source/_header.scss */
-.header img {
-  position: relative;
-  top: 10px;
+/*
+.divider{
+    height: 5px;
+    width: 100%;
+    margin: 0px auto;
+	padding-left: 25px;
+	font-family: 'Gochi Hand', cursive;
+}
+.header img{
+    position: relative;
+    top: 10px;
 }
 
-/*div#subup{
+div#subup{
 	@include dark-gradient;
 	width: 100%;
 	border-bottom: 5px solid $blu-light;
@@ -480,3 +495,199 @@ div#up{
 .hintNormal{
     @include hint-ok;
 }*/
+/* line 1, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
+.left {
+  width: 468px;
+  height: 400px;
+  float: left;
+  position: absolute;
+  background-image: url("/images/table.png");
+}
+
+/* line 9, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
+.left div:first-child {
+  font-size: 22px;
+  color: #033568;
+  font-family: 'Gochi Hand', cursive;
+  top: 130px;
+  position: relative;
+  left: 80px;
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  transform: rotate(2deg);
+}
+
+/* line 19, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
+.left div:nth-child(2) {
+  display: block;
+  font-size: 22px;
+  color: white;
+  text-shadow: 1px 1p 1px black;
+  font-family: 'Gochi Hand', cursive;
+  top: 285px;
+  position: relative;
+  left: 270px;
+  cursor: pointer;
+  cursor: hand;
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  transform: rotate(2deg);
+}
+
+/* line 33, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
+.left div:nth-child(2):hover {
+  top: 290px;
+  left: 275px;
+  -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  -ms-transform: rotate(4deg);
+  -o-transform: rotate(4deg);
+  transform: rotate(4deg);
+}
+
+/* line 39, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
+.right {
+  width: 580px;
+  height: 1000px;
+  position: relative;
+  top: 30px;
+  left: 495px;
+  color: white;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: right;
+}
+
+/* line 51, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
+.bottom {
+  clear: both;
+}
+
+/* line 1, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+#work {
+  padding-top: 10px;
+}
+
+/* line 5, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+#work h2 {
+  font-size: 16px;
+}
+
+/*
+#work .content{
+    height: 1000px;
+}
+
+#work .row{
+	height: 280px;
+}
+
+.row .box{
+	background-color: green;
+	width: 33%;
+	height: 100%;
+	float: left;
+}
+
+.row .box div{
+	padding: 10px;
+}
+*/
+/* line 30, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+#work .content {
+  width: 1060px;
+  margin: 0px auto;
+  height: 600px;
+  border-left: 1px solid #FFF;
+  border-right: 1px solid #FFF;
+}
+
+/* line 38, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+#work .lateral {
+  width: 10px;
+  height: 600px;
+  float: left;
+  background-color: #76B3E8;
+}
+
+/* line 45, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+#work .menu {
+  width: 300px;
+  height: 600px;
+  background-color: #033568;
+  float: left;
+  background: #556d87;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzU1NmQ4NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyMzUzOGEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #556d87 0%, #23538a 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #556d87), color-stop(100%, #23538a));
+  background: -webkit-linear-gradient(top, #556d87 0%, #23538a 100%);
+  background: -o-linear-gradient(top, #556d87 0%, #23538a 100%);
+  background: -ms-linear-gradient(top, #556d87 0%, #23538a 100%);
+  background: linear-gradient(top, #556d87 0%, #23538a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#556d87', endColorstr='#23538a',GradientType=0 );
+}
+
+/* line 62, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+#work .menu .entry {
+  margin-top: 10px;
+  width: 100%;
+  padding-top: 10px;
+  height: 30px;
+  background-color: #FFF;
+  color: #033568;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  cursor: hand;
+}
+
+/* line 76, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+#work .menu .entry:hover {
+  background-color: #033568;
+  color: white;
+}
+
+/* line 81, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+.selected::after {
+  content: 'ciao';
+  width: 20px;
+  height: 30px;
+  background-color: yellow;
+}
+
+/* line 88, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+#work .detail {
+  width: 740px;
+  height: 600px;
+  float: left;
+}
+
+/* line 94, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+.upTable, .downTable {
+  width: 1060px;
+  margin: 0px auto;
+  height: 20px;
+  background-color: #76B3E8;
+  border-left: 1px solid #FFF;
+  border-right: 1px solid #FFF;
+}
+
+/* line 103, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+.upTable {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-top: 1px solid #FFF;
+}
+
+/* line 109, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+.downTable {
+  clear: both;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom: 1px solid #FFF;
+}

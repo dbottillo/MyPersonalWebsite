@@ -1,0 +1,114 @@
+#work {
+	padding-top: 10px;
+}
+
+#work h2{
+	font-size: 16px;
+}
+
+/*
+#work .content{
+    height: 1000px;
+}
+
+#work .row{
+	height: 280px;
+}
+
+.row .box{
+	background-color: green;
+	width: 33%;
+	height: 100%;
+	float: left;
+}
+
+.row .box div{
+	padding: 10px;
+}
+*/
+
+#work .content{
+	width: 1060px;
+	margin: 0px auto;
+	height: 600px;
+	border-left: 1px solid #FFF;
+	border-right: 1px solid #FFF;
+}
+
+#work .lateral{
+	width: 10px;
+	height: 600px;
+	float: left;
+	background-color:  #76B3E8;
+}
+
+#work .menu{
+	width: 300px;
+	height: 600px;
+	background-color: $dark-color;
+	float:left;
+	background: rgb(85,109,135);
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzU1NmQ4NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyMzUzOGEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(85,109,135,1) 0%, rgba(35,83,138,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(85,109,135,1)), color-stop(100%,rgba(35,83,138,1)));
+	background: -webkit-linear-gradient(top,  rgba(85,109,135,1) 0%,rgba(35,83,138,1) 100%);
+	background: -o-linear-gradient(top,  rgba(85,109,135,1) 0%,rgba(35,83,138,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(85,109,135,1) 0%,rgba(35,83,138,1) 100%);
+	background: linear-gradient(top,  rgba(85,109,135,1) 0%,rgba(35,83,138,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#556d87', endColorstr='#23538a',GradientType=0 );
+	
+}
+
+#work .menu .entry{
+	margin-top: 10px;
+	width: 100%;
+	padding-top: 10px;
+	height: 30px;
+	background-color: #FFF;
+	color: $dark-color;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
+	cursor: hand;
+}
+
+#work .menu .entry:hover{
+	background-color: $dark-color;
+	color: white;
+}
+
+.selected::after{
+	content: 'ciao';
+	width: 20px;
+	height: 30px;
+	background-color: yellow;
+}
+
+#work .detail{
+	width: 740px;
+	height: 600px;
+	float: left;
+}
+
+.upTable, .downTable{
+	width: 1060px;
+	margin: 0px auto;
+	height: 20px;
+	background-color: #76B3E8;
+	border-left: 1px solid #FFF;
+	border-right: 1px solid #FFF;
+}
+
+.upTable{
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-top: 1px solid #FFF;
+}
+
+.downTable{
+	clear: both;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom: 1px solid #FFF;
+}

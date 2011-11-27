@@ -4,9 +4,11 @@ body{
 	font-family: 'Helvetica Neue', 'Droid sans mono', sans-serif;
 	font-size: 10px;
 	background: url('/images/bg.jpg') repeat-x fixed center top; 
-/*	background: url('/images/bg2.jpg') repeat-x fixed center top;*/
+/*		background-color: black;
+	background-image: url('/images/prova.png');
+	background-repeat: no-repeat; 
+	repeat-x fixed center top;*/
 	color: white;
-	color: #333;
 }
 
 a {
@@ -47,58 +49,6 @@ p{
 .container{
     width: 1084px;
     margin: 0px auto;
-}
-
-.left{
-    width: 468px;
-    height: 400px;
-    float: left;
-	background-image: url('/images/table.png');
-}
-
-.left div:first-child{
-	font-size: 22px;
-	color: $dark-color;
-	font-family: 'Gochi Hand', cursive;
-	top: 130px;
-	position: relative;
-	left: 80px;
-	@include text-rotate(2deg);
-}
-
-.left a:nth-child(2){
-	display: block;
-	font-size: 22px;
-	color: white;
-	text-shadow: 1px 1p 1px black;
-	font-family: 'Gochi Hand', cursive;
-	top: 285px;
-	position: relative;
-	left: 270px;
-	@include text-rotate(2deg);
-}
-
-.left a:nth-child(2):hover{
-	top: 290px;
-	left: 275px;
-	@include text-rotate(4deg);
-}
-
-.right{
-    width: 580px;
-    float: left;
-    height: 600px;
-	position: relative;
-	top: 40px;
-	left: 20px;
-	color: white;
-	font-size: 18px;
-	line-height: 130%;
-	text-align: right;
-}
-
-.bottom{
-    clear: both;
 }
 
 .footer{

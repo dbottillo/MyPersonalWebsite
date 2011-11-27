@@ -7,7 +7,23 @@
         <div class="container">
 	
 			<div id="home">
-	        	<%= render :partial => "header", :locals => { :type => 0 } %>
+	        	
+				<header class="header">
+					i'm Daniele Bottillo
+				    <nav>
+				        <div id="toWork">
+							Portfolio
+						</div>	
+						<div class="active">
+							About Me
+						</div>
+				    </nav>
+				</header>
+<!--				<div class="divider">	
+					<span><%= "About me" unless type !=0 %></span>
+					<span><%= "My Work" unless type !=1 %></span>
+				</div>-->
+	
 
 			
 				<div class="left">
@@ -15,9 +31,13 @@
 						<b>Email</b>: dbottillo[at]gmail[dot]com <br/>
 						<b>Location</b>: Bologna, ITALY
 					</div>
-					<a href="#work" id="toWork">
+					<!--<a href="#work" id="toWork">
 						My Work
-					</a>
+					</a>-->
+				<!--	<div id="toWork">
+						MyWork
+					</div>-->
+
 				</div>
 			
 				<div class="right">
@@ -29,22 +49,12 @@
 					I’m also a Sencha developer and i know Java, Android and Objective C for the mobile world.
 				</div>
 			
-				<div class="bottom"></div>
+
 			
 			</div>
 			
-			<div id="work">
-				<div>
-					<img src="/images/up.png" style="position: absolute; top: 20px; left: 150px;"/> Home
-				</div>
-				<%= render :partial => "header", :locals => { :type => 1 } %>
-				<span style="color: white">work</span>
-				<br/><br/><br/>	<br/><br/><br/><br/>
-				<div class="right">
-					
-					</div>
-			</div>
-        
+			
+        	<%= render :partial => "portfolio" %>
         
         	<%= render :partial => "footer", :locals => { :type => 0 } %>
 
