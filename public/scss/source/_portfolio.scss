@@ -35,11 +35,15 @@
 	border-right: 1px solid #FFF;
 }
 
-#work .lateral{
-	width: 10px;
+#work .lateral, #work .leftlateral{
+	width: 20px;
 	height: 600px;
 	float: left;
-	background-color:  #76B3E8;
+	background-color:  #000;
+}
+
+.leftlateral{
+	background: rgb(30,30,30) !important;
 }
 
 #work .menu{
@@ -57,6 +61,8 @@
 	background: linear-gradient(top,  rgba(85,109,135,1) 0%,rgba(35,83,138,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#556d87', endColorstr='#23538a',GradientType=0 );
 	
+	background: #033568;
+	
 }
 
 #work .menu .entry{
@@ -68,25 +74,32 @@
 	color: $dark-color;
 	font-size: 20px;
 	text-align: center;
-	font-weight: bold;
 	cursor: pointer;
 	cursor: hand;
+	background-color: $blu-active;
+	color: white;
 }
 
 #work .menu .entry:hover{
 	background-color: $dark-color;
 	color: white;
+	background-color: white;
+	color: $blu-active;
 }
 
 .selected::after{
-	content: 'ciao';
+	content: '';
+	display: block;
+	background-image: url('/images/arrow.png');
 	width: 20px;
-	height: 30px;
-	background-color: yellow;
+	height: 40px;
+	position: relative;
+	left: 300px;
+	top: -30px;
 }
 
 #work .detail{
-	width: 740px;
+	width: 720px;
 	height: 600px;
 	float: left;
 }
@@ -95,15 +108,27 @@
 	width: 1060px;
 	margin: 0px auto;
 	height: 20px;
-	background-color: #76B3E8;
+	background-color: #000;
 	border-left: 1px solid #FFF;
 	border-right: 1px solid #FFF;
+	background: rgb(30,30,30);
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMWUxZTFlIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBlMGUwZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(-45deg,  rgba(30,30,30,1) 0%, rgba(14,14,14,1) 100%);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(30,30,30,1)), color-stop(100%,rgba(14,14,14,1)));
+	background: -webkit-linear-gradient(-45deg,  rgba(30,30,30,1) 0%,rgba(14,14,14,1) 100%);
+	background: -o-linear-gradient(-45deg,  rgba(30,30,30,1) 0%,rgba(14,14,14,1) 100%);
+	background: -ms-linear-gradient(-45deg,  rgba(30,30,30,1) 0%,rgba(14,14,14,1) 100%);
+	background: linear-gradient(-45deg,  rgba(30,30,30,1) 0%,rgba(14,14,14,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e1e1e', endColorstr='#0e0e0e',GradientType=1 );
+	
 }
 
 .upTable{
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
 	border-top: 1px solid #FFF;
+	
+	
 }
 
 .downTable{
@@ -111,4 +136,101 @@
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
 	border-bottom: 1px solid #FFF;
+	
+}
+
+#work .detail > div:first-child{
+	height: 570px;
+}
+
+#work .detail > div > h1{
+	color: white;
+	text-align: right;
+	font-size: 26px;
+	margin-right: 25px;
+	font-style: italic;
+}
+
+#work .detail > .down{
+	background-color: black;
+	width: 100%;
+	height: 25px;
+	clear: both;
+}
+
+#work .detail > div >.images{
+	width: 400px;
+	height: 390px;
+	float: left;
+}
+
+#work .detail > div >.description{
+	width: 100%;
+	height: 390px;
+}
+
+#work .detail > div >.description p{
+	font-size: 14px;
+	text-align: right;
+	line-height: 160%;
+	color: white;
+	margin-right: 10px;
+}
+
+#work .cornice{
+	margin: 5px auto;
+	width: 350px;
+	height: 350px;
+	border: 1px solid white;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-top-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: #CCC;
+}
+
+#work .indicator{
+	width: 350px;
+	height: 15px;
+	margin: 0px auto;
+	text-align: center;
+	position: relative;
+	top: 5px;
+}
+
+#work .indicator > .round{
+	display: block;
+	width: 10px;
+	height: 10px;
+	background-color: white;
+	border-radius: 50px;
+	margin-right: 5px;
+	border: 1px solid $dark-color;
+	float: left;
+}
+
+#work .indicator > .active, #work .indicator > .round:hover{
+	background-color: $dark-color;
+	border: 1px solid white;
+}
+
+#work .bottomdes{
+	clear: both;
+	text-align: left;
+	font-size: 16px;
+	padding-left: 20px;
+	margin-top: 20px;
+	color: $blu-active;
+}
+
+#work .bottomdes > .entry{
+	color: white;
+}
+
+#work .bottomdes > a{
+	color: $blu-active;
+}
+
+#work .bottomdes > a:hover{
+	color: white;
 }
