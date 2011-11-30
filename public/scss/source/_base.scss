@@ -21,14 +21,21 @@ a:hover{
 }
 
 h1{
-    color: $color-active;
-    color: #333;
+/*    color: $color-active;
+    color: #333;*/
     font-size: 22px;
     margin-top: 5px;
     margin-bottom: 10px;
     font-weight: normal;
     line-height: 100%;
-   /* font-family: 'Helvetica', 'Droid sans mono', sans-serif;*/
+
+   /* font-family: 'Helvetica', 'Droid sans mono', sans-serif;
+	width: 70px;*/
+	text-align: center;
+	border-bottom: 5px solid $blu-active;
+	color: white;
+	@include text-rotate(-3deg);
+	color: white;
 }
 
 h2{
@@ -61,7 +68,7 @@ p{
     font-size: 10px;
     border-top: 2px solid $blu-active;
     position: relative;
-    top: 20px;
+    top: 100px;
 }
 
 .titleBig{

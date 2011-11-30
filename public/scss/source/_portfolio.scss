@@ -47,7 +47,7 @@
 }
 
 #work .menu{
-	width: 300px;
+	width: 299px;
 	height: 600px;
 	background-color: $dark-color;
 	float:left;
@@ -61,12 +61,11 @@
 	background: linear-gradient(top,  rgba(85,109,135,1) 0%,rgba(35,83,138,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#556d87', endColorstr='#23538a',GradientType=0 );
 	
-	background: #033568;
-	
+	background: rgba(3,53,104,0.3);
+	background: -webkit-linear-gradient(top,  rgba(3,53,104,0.2) 0%,rgba(35,83,138,0.8) 100%);
 }
 
 #work .menu .entry{
-	margin-top: 10px;
 	width: 100%;
 	padding-top: 10px;
 	height: 30px;
@@ -80,28 +79,52 @@
 	color: white;
 }
 
-#work .menu .entry:hover{
-	background-color: $dark-color;
-	color: white;
-	background-color: white;
-	color: $blu-active;
+#work .dividerEntry{
+	height: 10px;
 }
 
-.selected::after{
+#work .menu .entry:hover, #work .menu .selected{
+	background-color: $dark-color;
+	color: white;
+	border-top: 1px solid $blu-active;
+	border-bottom: 1px solid $blu-active;
+	padding-top: 9px;
+	height: 29px;
+/*	background-color: white;
+	color: $blu-active;*/
+}
+
+.selected::after, #work .menu .entry:hover::after{
 	content: '';
 	display: block;
-	background-image: url('/images/arrow.png');
-	width: 20px;
+	background-repeat: no-repeat;
+	width: 15px;
 	height: 40px;
 	position: relative;
 	left: 300px;
 	top: -30px;
 }
 
+.selected::after{
+	background-image: url('/images/arrow.png');
+} 
+
+#work .menu .entry:hover::after, .selected::after{
+	background-image: url('/images/arrow_dark.png');
+	left: 299px;
+}
+
 #work .detail{
 	width: 720px;
 	height: 600px;
 	float: left;
+}
+
+#work .entries{
+	width: 100%;
+	height: 560px;
+	border-right: 1px solid $blu-active;
+	padding-top: 15px;
 }
 
 .upTable, .downTable{
@@ -149,9 +172,10 @@
 	font-size: 26px;
 	margin-right: 25px;
 	font-style: italic;
+	@include text-rotate(-1deg);	
 }
 
-#work .detail > .down{
+#work  .down{
 	background-color: black;
 	width: 100%;
 	height: 25px;
@@ -187,6 +211,8 @@
 	border-top-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 	background-color: #CCC;
+	position: relative;
+	top: -20px;
 }
 
 #work .indicator{
@@ -195,10 +221,10 @@
 	margin: 0px auto;
 	text-align: center;
 	position: relative;
-	top: 5px;
+	top: -15px;
 }
 
-#work .indicator > .round{
+.round {
 	display: block;
 	width: 10px;
 	height: 10px;
@@ -209,7 +235,7 @@
 	float: left;
 }
 
-#work .indicator > .active, #work .indicator > .round:hover{
+#work .indicator .active, #work .indicator > .round:hover{
 	background-color: $dark-color;
 	border: 1px solid white;
 }
@@ -219,7 +245,6 @@
 	text-align: left;
 	font-size: 16px;
 	padding-left: 20px;
-	margin-top: 20px;
 	color: $blu-active;
 }
 

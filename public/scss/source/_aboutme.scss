@@ -1,19 +1,29 @@
 .left{
     width: 468px;
-    height: 400px;
+    height: 320px;
     float: left;
 	position: absolute;
 	background-image: url('/images/table.png');
 }
 
 .left div:first-child{
-	font-size: 22px;
+	top: 120px;
+	position: relative;
+	left: 100px;
+	@include text-rotate(2deg);
+	line-height: 130%;
+}
+
+.left div:first-child, .left div:first-child a{
+	font-size: 18px;
 	color: $dark-color;
 	font-family: 'Gochi Hand', cursive;
-	top: 130px;
-	position: relative;
-	left: 80px;
-	@include text-rotate(2deg);
+
+}
+
+.left div:first-child a:hover{
+	border-bottom: 5px solid $blu-active;
+	color: $blu-active;
 }
 
 .left div:nth-child(2){
@@ -38,16 +48,53 @@
 
 .right{
     width: 580px;
-    height: 1000px;
+    height: 320px;
 	position: relative;
-	top: 30px;
+	top: 20px;
 	left: 495px;
 	color: white;
-	font-size: 18px;
-	line-height: 130%;
+	font-size: 16px;
+	line-height: 125%;
 	text-align: right;
 }
 
-.bottom{
+.right h1{
+	width: 200px;
+	float: right;
+	@include text-rotate(3deg);	
+}
+
+.bottomHome{
     clear: both;
+	height: 700px;
+	width: 90%;
+	margin: 0px auto;
+	font-size: 16px;
+}
+
+.bottomHome h1{
+	width: 70px;
+/*	text-align: center;
+	border-bottom: 5px solid $blu-active;
+	color: white;
+	@include text-rotate(-3deg);
+	color: white;*/
+}
+
+.skills{
+	height: 100px;
+}
+
+.skills > div{
+	float: left;
+	margin-left: 20px;
+}
+
+.social{
+	margin-top: 40px;
+}
+
+.social h1{
+	float: right;
+	@include text-rotate(3deg);	
 }

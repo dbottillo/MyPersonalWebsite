@@ -19,13 +19,13 @@
 nav{
     float: right;
     position: relative;
-    top: 18px;
+    top: 20px;
     right: 25px;
     font-family: 'Droid sans mono', sans-serif;
 }
 
 .type1 nav{
-	top: -2px;
+	top: 0px;
 }
 
 nav div{
@@ -48,7 +48,7 @@ nav div.active{
 	position: relative;
 	font-size: 24px;
 	cursor: default;
-	top: 0px;
+	top: 2px;
     border-bottom: 4px solid $blu-active;
 	color: $blu-active;
 }
