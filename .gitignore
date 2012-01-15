@@ -4,3 +4,5 @@ db/*.sqlite3
 log/*.log
 tmp/
 tmp/
+public/.DS_Store
+public/images/.DS_Store
