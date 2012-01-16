@@ -1,3 +1,4 @@
+
 .left{
     width: 468px;
     height: 320px;
@@ -97,4 +98,23 @@
 .social h1{
 	float: right;
 	@include text-rotate(3deg);	
+}
+
+.spaces{
+    clear: both;
+    margin-top: 40px;   
+}
+
+.social .linkedin{
+    width: 400px;   
+    height: 160px;
+    float: left;
+}
+
+.social .twitter{
+    float: left;
+    width: 350px;
+    height: 260px;
+    position: relative;
+    left: 50px;
 }

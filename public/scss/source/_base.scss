@@ -54,9 +54,16 @@ p{
 }
 
 .container{
+    /*width: 1084px;*/
+    width: 100%;
+    margin: 0px auto;
+}
+
+.page{
     width: 1084px;
     margin: 0px auto;
 }
+
 
 .footer{
     bottom: 0px;
