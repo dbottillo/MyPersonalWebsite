@@ -33,6 +33,12 @@
 	font-weight: bold;
 }
 
+@mixin bg-loading{
+	background-image: url('/images/loader.gif');
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
 /*@mixin dark-gradient {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$grey-light), color-stop(100%,$grey-dark)) !important;
 }

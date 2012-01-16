@@ -332,7 +332,7 @@ div#down{
   margin: 0px auto;
   position: relative;
   top: 20px;
-  padding: 10px 20px;
+  padding: 10px 0px;
   background: rgba(255, 255, 255, 0.99);
   font-size: 47px;
   color: #033568;
@@ -657,13 +657,27 @@ div#up{
   width: 400px;
   height: 160px;
   float: left;
+  background-image: url("/images/loader.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
-/* line 114, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
+/* line 115, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
 .social .twitter {
   float: left;
-  width: 350px;
+  width: 320px;
   height: 260px;
+  position: relative;
+  left: 50px;
+  background-image: url("/images/loader.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* line 124, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
+.social .other {
+  width: 200px;
+  float: left;
   position: relative;
   left: 50px;
 }
@@ -863,11 +877,11 @@ div#up{
   font-size: 26px;
   margin-right: 25px;
   font-style: italic;
-  -webkit-transform: rotate(-2deg);
-  -moz-transform: rotate(-2deg);
-  -ms-transform: rotate(-2deg);
-  -o-transform: rotate(-2deg);
-  transform: rotate(-2deg);
+  -webkit-transform: rotate(-1deg);
+  -moz-transform: rotate(-1deg);
+  -ms-transform: rotate(-1deg);
+  -o-transform: rotate(-1deg);
+  transform: rotate(-1deg);
 }
 
 /* line 185, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */

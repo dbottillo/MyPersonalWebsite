@@ -109,12 +109,21 @@
     width: 400px;   
     height: 160px;
     float: left;
+	@include bg-loading;
 }
 
 .social .twitter{
     float: left;
-    width: 350px;
+    width: 320px;
     height: 260px;
     position: relative;
+    left: 50px;
+	@include bg-loading;
+}
+
+.social .other{
+	width: 200px;
+	float: left;
+	position: relative;
     left: 50px;
 }
