@@ -1,6 +1,6 @@
 <!DOCTYPE>
 <html>
-    <%= render :partial => "head", :locals => { :type => 0 } %>
+    <%= render :partial => "shared/head", :locals => { :type => 0 } %>
     
     <body>
         
@@ -9,75 +9,128 @@
 			<div id="home">
 	        	
 				<header class="header">
-					i'm Daniele Bottillo
-				    <nav>
-				        <div id="toWork">
-							Portfolio
-						</div>	
-						<div class="active">
-							About Me
-						</div>
-				    </nav>
+                    <div class="page">
+    					i'm Daniele Bottillo
+    				    <nav>
+    				        <div id="toWork">
+    							Portfolio
+    						</div>	
+    						<div class="active">
+    							About Me
+    						</div>
+    				    </nav>
+                    </div>
 				</header>
-
+<!--				<div class="divider">	
+					<span><%= "About me" unless type !=0 %></span>
+					<span><%= "My Work" unless type !=1 %></span>
+				</div>-->
+	
+                <div class="page">
 
 			
-				<div class="left">
-					<div>
-						<b>Email</b>: <a href="mailto?">dbottillo[at]gmail[dot]com</a><br/>
-						<b>Location</b>: Bologna, ITALY<br/>
-						<a href="http://www.twitter.com/cribcaged7">cribcaged7 (Twitter)</a><br/>
-						<a href="...">danielebottillo (Skype)</a>
-					</div>
-					<!--<a href="#work" id="toWork">
-						My Work
-					</a>-->
-				<!--	<div id="toWork">
-						MyWork
-					</div>-->
-
-				</div>
+    				<div class="left">
+    					<div>
+    						<b>Email</b>: <a href="mailto?">dbottillo[at]gmail[dot]com</a><br/>
+    						<b>Location</b>: Bologna, ITALY<br/>
+    						<a href="http://www.twitter.com/cribcaged7">cribcaged7 (Twitter)</a><br/>
+    						<a href="...">danielebottillo (Skype)</a>
+    					</div>
+    					<!--<a href="#work" id="toWork">
+    						My Work
+    					</a>-->
+    				<!--	<div id="toWork">
+    						MyWork
+    					</div>-->
+    
+    				</div>
+    			
+    				<div class="right">
+    					<br/><br/>
+    <!--					<span class="titleBig"></span>-->
+    					<h1>Hello! I am Daniele</h1><br/><br/><br/>
+    					I was born in Bologna, Italy where actually i'm working. <br/>
+    					I have a degree in Computer Science.
+    					<!--<br/><br/><br/>
+    					<span class="titleBig">My Skills</span><br/><br/>
+    					I specialize in web and mobile development. I’m an expert of several of web languages: Javascript, HTML, CSS, PHP,  RubyOnRails, etc... . 
+    					I’m also a Sencha developer and i know Java, Android and Objective C for the mobile world.-->
+    				</div>
+    				
+    				<div class="bottomHome">
+    					<div class="skills">
+    						<h1>Skills</h1>
+    						<div><span class="round active"></span>Html5</div>
+    						<div><span class="round active"></span>Javascript</div>
+    						<div><span class="round active"></span>CSS3</div>
+    						<div><span class="round active"></span>Android</div>
+    						<div><span class="round active"></span>Sencha</div>
+    						<div><span class="round active"></span>JQuery</div>
+    						<div><span class="round active"></span>JQuery Mobile</div>
+    						<div><span class="round active"></span>PHP</div>
+    						<div><span class="round active"></span>RubyOnRails</div>
+    						<div><span class="round active"></span>Java</div>
+    						<br/><br/>
+    						<div><span class="round active"></span>MySql</div>
+    						<div><span class="round active"></span>MongoDB</div>
+    						<div><span class="round active"></span>Fireworks</div>
+    						<div><span class="round active"></span>Photoshop</div>
+    						<div><span class="round active"></span>Objetive C</div>
+    						<div><span class="round active"></span>Balsamiq</div>
+    					</div>
+    					
+    					<div class="social">
+    						<h1>Social</h1>
+                            <div class="spaces">
+                            
+                                <div class="linkedin">
+        					    	<script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+                                    <script type="IN/MemberProfile" data-id="http://www.linkedin.com/pub/daniele-bottillo/b/2a5/528" data-format="inline" data-related="false"></script>
+                                </div>
+                                
+                                <div class="twitter">
+                                    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+                                    <script>
+                                    new TWTR.Widget({
+                                      version: 2,
+                                      type: 'profile',
+                                      rpp: 2,
+                                      interval: 30000,
+                                      width: 250,
+                                      height: 170,
+                                      theme: {
+                                        shell: {
+                                          background: '#2d7cc2',
+                                          color: '#ffffff'
+                                        },
+                                        tweets: {
+                                          background: '#d6e5f0',
+                                          color: '#000000',
+                                          links: '#083685'
+                                        }
+                                      },
+                                      features: {
+                                        scrollbar: false,
+                                        loop: false,
+                                        live: true,
+                                        behavior: 'all'
+                                      }
+                                    }).render().setUser('cribcaged7').start();
+                                    </script>
+                                </div>
+                                
+                                <div class="other">
+                                    <a href="..."><img src="/images/plus.png"></a>
+                                    <a href="..."><img src="/images/facebook.png"></a>
+                                    
+                                    <a href="..."><img src="/images/foursquare.png"></a>
+                                </div>
+                            </div>
+    					</div>
+    				</div>
 			
-				<div class="right">
-					<br/><br/>
-<!--					<span class="titleBig"></span>-->
-					<h1>Hello! I am Daniele</h1><br/><br/><br/>
-					I was born in Bologna, Italy where actually i'm working. <br/>
-					I have a degree in Computer Science.
-					<!--<br/><br/><br/>
-					<span class="titleBig">My Skills</span><br/><br/>
-					I specialize in web and mobile development. I’m an expert of several of web languages: Javascript, HTML, CSS, PHP,  RubyOnRails, etc... . 
-					I’m also a Sencha developer and i know Java, Android and Objective C for the mobile world.-->
-				</div>
-				
-				<div class="bottomHome">
-					<div class="skills">
-						<h1>Skills</h1>
-						<div><span class="round active"></span>Html5</div>
-						<div><span class="round active"></span>Javascript</div>
-						<div><span class="round active"></span>CSS3</div>
-						<div><span class="round active"></span>Android</div>
-						<div><span class="round active"></span>Sencha</div>
-						<div><span class="round active"></span>JQuery</div>
-						<div><span class="round active"></span>JQuery Mobile</div>
-						<div><span class="round active"></span>PHP</div>
-						<div><span class="round active"></span>RubyOnRails</div>
-						<div><span class="round active"></span>Java</div>
-						<br/><br/>
-						<div><span class="round active"></span>MySql</div>
-						<div><span class="round active"></span>MongoDB</div>
-						<div><span class="round active"></span>Fireworks</div>
-						<div><span class="round active"></span>Photoshop</div>
-						<div><span class="round active"></span>Objetive C</div>
-						<div><span class="round active"></span>Balsamiq</div>
-					</div>
-					
-					<div class="social">
-						<h1>Social</h1>
-						ciao
-					</div>
-				</div>
-			
+            
+                </div>
 
 			
 			</div>
@@ -85,7 +138,7 @@
 			
         	<%= render :partial => "portfolio" %>
         
-        	<%= render :partial => "footer", :locals => { :type => 0 } %>
+        	<%= render :partial => "shared/footer", :locals => { :type => 0 } %>
 
 		</div>
     </body>
