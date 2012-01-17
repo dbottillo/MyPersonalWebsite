@@ -9,7 +9,7 @@ $(document).ready(function(){
 	 * You can use EVERY single setting of jQuery.ScrollTo, in the settings hash you send to jQuery.LocalScroll.
 	 */
 	
-	console.log(window.location.hash);
+	//console.log(window.location.hash);
 	switch (window.location.hash) {
 		case "#portfolio":
 			toWork();

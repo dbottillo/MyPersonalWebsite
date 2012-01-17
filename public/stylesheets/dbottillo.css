@@ -585,7 +585,7 @@ div#up{
   top: 20px;
   left: 495px;
   color: white;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 125%;
   text-align: right;
 }
@@ -602,6 +602,28 @@ div#up{
 }
 
 /* line 68, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
+.btn_download {
+  display: block;
+  width: 130px;
+  padding-top: 5px;
+  height: 25px;
+  background-color: white;
+  float: right;
+  font-weight: bold;
+  font-size: 16px;
+  color: #033568;
+  border-radius: 3px;
+  text-align: center;
+}
+
+/* line 82, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
+.btn_download:hover {
+  background-color: #033568;
+  color: white;
+  border: 1px solid white;
+}
+
+/* line 88, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
 .bottomHome {
   clear: both;
   height: 700px;
@@ -610,7 +632,7 @@ div#up{
   font-size: 16px;
 }
 
-/* line 76, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
+/* line 96, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
 .bottomHome h1 {
   width: 70px;
   /*	text-align: center;
@@ -620,23 +642,23 @@ div#up{
   	color: white;*/
 }
 
-/* line 85, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
+/* line 105, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
 .skills {
   height: 100px;
 }
 
-/* line 89, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
+/* line 109, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
 .skills > div {
   float: left;
   margin-left: 20px;
 }
 
-/* line 94, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
+/* line 114, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
 .social {
   margin-top: 40px;
 }
 
-/* line 98, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
+/* line 118, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
 .social h1 {
   float: right;
   -webkit-transform: rotate(3deg);
@@ -646,13 +668,13 @@ div#up{
   transform: rotate(3deg);
 }
 
-/* line 103, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
+/* line 123, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
 .spaces {
   clear: both;
   margin-top: 40px;
 }
 
-/* line 108, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
+/* line 128, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
 .social .linkedin {
   width: 400px;
   height: 160px;
@@ -662,7 +684,7 @@ div#up{
   background-repeat: no-repeat;
 }
 
-/* line 115, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
+/* line 135, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
 .social .twitter {
   float: left;
   width: 320px;
@@ -674,12 +696,28 @@ div#up{
   background-repeat: no-repeat;
 }
 
-/* line 124, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
+/* line 144, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
 .social .other {
   width: 200px;
   float: left;
   position: relative;
   left: 50px;
+}
+
+/* line 151, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
+.social .other a {
+  margin-left: 15px;
+  float: left;
+  display: block;
+}
+
+/* line 157, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
+.social .other a:hover {
+  -webkit-transform: rotate(25deg);
+  -moz-transform: rotate(25deg);
+  -ms-transform: rotate(25deg);
+  -o-transform: rotate(25deg);
+  transform: rotate(25deg);
 }
 
 /* line 1, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */

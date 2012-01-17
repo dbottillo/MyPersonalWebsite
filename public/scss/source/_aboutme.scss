@@ -54,7 +54,7 @@
 	top: 20px;
 	left: 495px;
 	color: white;
-	font-size: 16px;
+	font-size: 15px;
 	line-height: 125%;
 	text-align: right;
 }
@@ -63,6 +63,26 @@
 	width: 200px;
 	float: right;
 	@include text-rotate(3deg);	
+}
+
+.btn_download{
+    display: block;
+    width: 130px;
+    padding-top: 5px;
+    height: 25px;
+    background-color: white;
+    float: right;
+    font-weight: bold;
+    font-size: 16px;
+    color: $dark-color;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.btn_download:hover{
+    background-color: $dark-color;
+    color: white;
+    border: 1px solid white;
 }
 
 .bottomHome{
@@ -126,4 +146,14 @@
 	float: left;
 	position: relative;
     left: 50px;
+}
+
+.social .other a{
+    margin-left: 15px;
+    float: left;
+    display: block;
+}
+
+.social .other a:hover{
+    @include text-rotate(25deg);    
 }
