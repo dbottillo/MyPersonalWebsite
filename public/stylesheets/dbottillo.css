@@ -963,12 +963,19 @@ div#up{
   border-bottom-left-radius: 15px;
   border-top-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  background-color: #CCC;
+  background-color: #FFF;
   position: relative;
   top: -20px;
 }
 
 /* line 226, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+#work .cornice img {
+  max-width: 330px;
+  max-height: 330px;
+  padding: 10px;
+}
+
+/* line 232, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
 #work .indicator {
   width: 350px;
   height: 15px;
@@ -978,7 +985,7 @@ div#up{
   top: -15px;
 }
 
-/* line 235, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+/* line 241, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
 .round {
   display: block;
   width: 10px;
@@ -990,13 +997,13 @@ div#up{
   float: left;
 }
 
-/* line 246, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+/* line 252, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
 #work .indicator .active, #work .indicator > .round:hover {
   background-color: #033568;
   border: 1px solid white;
 }
 
-/* line 251, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+/* line 257, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
 #work .bottomdes {
   clear: both;
   text-align: left;
@@ -1005,17 +1012,17 @@ div#up{
   color: #2d96ff;
 }
 
-/* line 259, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+/* line 265, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
 #work .bottomdes > .entry {
   color: white;
 }
 
-/* line 263, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
-#work .bottomdes > a {
+/* line 269, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+#work .bottomdes a {
   color: #2d96ff;
 }
 
-/* line 267, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
-#work .bottomdes > a:hover {
+/* line 273, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+#work .bottomdes a:hover {
   color: white;
 }

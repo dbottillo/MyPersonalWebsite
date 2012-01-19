@@ -218,9 +218,15 @@
 	border-bottom-left-radius: 15px;
 	border-top-left-radius: 5px;
 	border-bottom-right-radius: 5px;
-	background-color: #CCC;
+	background-color: #FFF;
 	position: relative;
 	top: -20px;
+}
+
+#work .cornice img{
+    max-width: 330px;
+    max-height: 330px;
+    padding: 10px;
 }
 
 #work .indicator{
@@ -260,10 +266,10 @@
 	color: white;
 }
 
-#work .bottomdes > a{
+#work .bottomdes a{
 	color: $blu-active;
 }
 
-#work .bottomdes > a:hover{
+#work .bottomdes a:hover{
 	color: white;
 }
