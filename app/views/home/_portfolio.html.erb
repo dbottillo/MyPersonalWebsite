@@ -17,9 +17,13 @@
 		<div class="leftlateral"></div>
 		<div class="menu">
 			<div class="entries">
-				<div class="entry selected">CheckIt!</div>
+				<a href="javascript:change_work('CheckIt')">
+                    <div class="work entry selected" id="checkit_div">CheckIt!</div>
+                </a>
 				<div class="dividerEntry"></div>
-				<div class="entry">Frizòn</div>
+				<a href="javascript:change_work('Wemobi')">
+                    <div class="work entry" id="wemobi_div">WeMobi</div>
+                </a>
 			</div>
 			<div class="down">
 			</div>
@@ -27,27 +31,28 @@
 		<div class="detail">
 			<div>
 				<div class="title">
-                    <h1>CheckIt!</h1>
+                    <h1 id="title_work">CheckIt!</h1>
                 </div>
 				<div class="images" style="clear: both;">
 					<div class="cornice">
+                        <img src="/images/work/checkit/uno.png" />
 					</div>
 					<div class="indicator">
-						<span class="round"></span>
-						<span class="round active"></span>
-						<span class="round"></span>
+						<a href="javascript:portfolio_image(0)"><span class="round active"></span></a>
+						<a href="javascript:portfolio_image(1)"><span class="round"></span></a>
+						<a href="javascript:portfolio_image(2)"><span class="round"></span></a>
 					</div>
 				</div>
 				<div class="description">
-					<p>
+					<p id="text_des_work">
 					CheckIt! is a web application that can help you to manage your daily routine: you can use ToDo List to save what you have to do.
 					You can also use Accounting section to track your finance and see your money.
 					</p>
 				</div>
 				<div class="bottomdes">
-					<span class="entry">Commitment:</span> Myself<br/><br/>
-					<span class="entry">Link:</span> <a href="http://www.checkithq.com" target="_blank">http://www.checkithq.com</a><br/><br/>
-					<span class="entry">Tecnologies:</span> Chrome, HTML5, CSS3, JQuery, Javascript, ChromeWebStore, RubyOnRails, MongoDb
+					<span class="entry">Commitment:</span> <span id="commitment">Myself</span><br/><br/>
+					<span class="entry">Link:</span> <a href="http://www.checkithq.com" target="_blank" id="link_commitment">http://www.checkithq.com</a><br/><br/>
+					<span class="entry">Technologies: </span> <span id="technologies">Chrome, HTML5, CSS3, JQuery, Javascript, ChromeWebStore, RubyOnRails, MongoDb</span>
 				</div>
 			</div>
 			<div class="down">
