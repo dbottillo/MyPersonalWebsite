@@ -654,11 +654,19 @@ div#up{
 }
 
 /* line 114, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
+.skills .circle1 {
+  width: 200px;
+  height: 200px;
+  float: left;
+  background-image: url("/images/circle1.png");
+}
+
+/* line 121, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
 .social {
   margin-top: 40px;
 }
 
-/* line 118, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
+/* line 125, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
 .social h1 {
   float: right;
   -webkit-transform: rotate(3deg);
@@ -668,13 +676,13 @@ div#up{
   transform: rotate(3deg);
 }
 
-/* line 123, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
+/* line 130, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
 .spaces {
   clear: both;
   margin-top: 40px;
 }
 
-/* line 128, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
+/* line 135, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
 .social .linkedin {
   width: 400px;
   height: 160px;
@@ -684,7 +692,7 @@ div#up{
   background-repeat: no-repeat;
 }
 
-/* line 135, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
+/* line 142, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
 .social .twitter {
   float: left;
   width: 320px;
@@ -696,7 +704,7 @@ div#up{
   background-repeat: no-repeat;
 }
 
-/* line 144, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
+/* line 151, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
 .social .other {
   width: 200px;
   float: left;
@@ -704,14 +712,14 @@ div#up{
   left: 50px;
 }
 
-/* line 151, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
+/* line 158, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
 .social .other a {
   margin-left: 15px;
   float: left;
   display: block;
 }
 
-/* line 157, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
+/* line 164, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
 .social .other a:hover {
   -webkit-transform: rotate(25deg);
   -moz-transform: rotate(25deg);

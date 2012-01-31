@@ -30,18 +30,45 @@ function change_work(work){
     
     portfolio_image(0);
     
-    $('#title_work').html(getTitle(work));
-    $('#commitment').html(getCommitment(work));
+    $('#title_work').html(getTitle());
+    $('#commitment').html(getCommitment());
+    updateLink();
+    $('#technologies').html(getTecnologies());
+    $('#text_des_work').html(getDescription());
 }
 
-function getTitle(work){
-    if (work === "CheckIt") return "CheckIt!";
-    else if (work === "Wemobi") return "Wemobi";
+function getTitle(){
+    if (current_work === "CheckIt") return "CheckIt!";
+    else if (current_work === "Wemobi") return "Wemobi";
     else return "";
 }
 
-function getCommitment(work){
-    if (work === "CheckIt") return "Myself";
-    else if (work === "Wemobi") return "<a href='http://www.mavigex.com' target='_blank'>Mavigex S.r.l.</a>";
+function getCommitment(){
+    if (current_work === "CheckIt") return "Myself";
+    else if (current_work === "Wemobi") return "<a href='http://www.mavigex.com' target='_blank'>Mavigex S.r.l.</a>";
+    else return "";
+}
+
+function updateLink(){
+    if (current_work === "CheckIt") {
+        $('#link_commitment').attr('href','http://www.checkithq.com');
+        $('#link_commitment').text("http://www.checkithq.com");
+    }else if (current_work === "Wemobi") {
+        $('#link_commitment').attr('href','http://www.wemobi.it');
+        $('#link_commitment').text("http://www.wemobi.it");
+        //return "<a href='http://www.mavigex.com' target='_blank'>Mavigex S.r.l.</a>";
+    }
+}
+
+function getDescription(){
+    if (current_work === "CheckIt") return "CheckIt! is a web application that can help you to manage your daily routine: you can use ToDo List to save what you have to do."+
+    				"You can also use Accounting section to track your finance and see your money.";
+    else if (current_work === "Wemobi") return "WeMobi is the mobile brand of Mavigex.";
+    else return "";
+}
+
+function getTecnologies(){
+    if (current_work === "CheckIt") return "Chrome, HTML5, CSS3, JQuery, Javascript, ChromeWebStore, RubyOnRails, MongoDb";
+    else if (current_work === "Wemobi") return "HTML5, CSS3, JQuery, Javascript, PHP, Canvas";
     else return "";
 }
