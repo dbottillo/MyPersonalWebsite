@@ -677,19 +677,19 @@ div#up{
 
 /* line 135, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
 .skills .circle2 {
-  background-image: url("/images/circle3.png");
+  background-image: url("/images/circle2.png");
   margin-top: -15px;
 }
 
 /* line 140, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
 .skills .circle3 {
-  background-image: url("/images/circle1.png");
+  background-image: url("/images/circle3.png");
   color: #033568;
 }
 
 /* line 145, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_aboutme.scss */
 .skills .circle4 {
-  background-image: url("/images/circle3.png");
+  background-image: url("/images/circle4.png");
   margin-top: -5px;
 }
 
@@ -847,35 +847,40 @@ div#up{
 #work .menu .entry {
   width: 100%;
   padding-top: 10px;
-  height: 30px;
-  background-color: #FFF;
+  height: 28px;
   color: #033568;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   cursor: pointer;
   cursor: hand;
-  background-color: #2d96ff;
+  background-color: #044281;
   color: white;
+  /*	border-top: 1px solid $blu-active;*/
+  border-bottom: 1px solid #2d96ff;
 }
 
-/* line 82, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+/* line 84, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+.first {
+  border-top: 1px solid #2d96ff;
+}
+
+/* line 88, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
 #work .dividerEntry {
   height: 10px;
+  height: 0px;
 }
 
-/* line 86, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+/* line 93, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
 #work .menu .entry:hover, #work .menu .selected {
   background-color: #033568;
   color: white;
-  border-top: 1px solid #2d96ff;
-  border-bottom: 1px solid #2d96ff;
-  padding-top: 9px;
-  height: 29px;
-  /*	background-color: white;
+  /*	padding-top: 9px;
+  	height: 29px;
+  	background-color: white;
   	color: $blu-active;*/
 }
 
-/* line 97, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+/* line 103, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
 .selected::after, #work .menu .entry:hover::after {
   content: '';
   display: block;
@@ -887,25 +892,25 @@ div#up{
   top: -30px;
 }
 
-/* line 108, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+/* line 114, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
 .selected::after {
   background-image: url("/images/arrow.png");
 }
 
-/* line 112, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+/* line 118, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
 #work .menu .entry:hover::after, .selected::after {
   background-image: url("/images/arrow_dark.png");
   left: 299px;
 }
 
-/* line 117, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+/* line 123, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
 #work .detail {
   width: 720px;
   height: 600px;
   float: left;
 }
 
-/* line 123, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+/* line 129, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
 #work .entries {
   width: 100%;
   height: 560px;
@@ -913,7 +918,7 @@ div#up{
   padding-top: 15px;
 }
 
-/* line 130, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+/* line 136, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
 .upTable, .downTable {
   width: 1060px;
   margin: 0px auto;
@@ -932,14 +937,14 @@ div#up{
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e1e1e', endColorstr='#0e0e0e',GradientType=1 );
 }
 
-/* line 149, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+/* line 155, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
 .upTable {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-top: 1px solid #FFF;
 }
 
-/* line 157, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+/* line 163, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
 .downTable {
   clear: both;
   border-bottom-left-radius: 20px;
@@ -947,17 +952,17 @@ div#up{
   border-bottom: 1px solid #FFF;
 }
 
-/* line 165, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+/* line 171, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
 #work .detail > div:first-child {
   height: 570px;
 }
 
-/* line 169, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+/* line 175, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
 #work .title {
   width: 100%;
 }
 
-/* line 173, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+/* line 179, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
 #work .detail > div div > h1 {
   color: white;
   left: 550px;
@@ -974,7 +979,7 @@ div#up{
   transform: rotate(-1deg);
 }
 
-/* line 185, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+/* line 191, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
 #work .down {
   background-color: black;
   width: 100%;
@@ -982,30 +987,30 @@ div#up{
   clear: both;
 }
 
-/* line 192, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+/* line 198, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
 #work .detail > div > .images {
   width: 400px;
   height: 390px;
   float: left;
 }
 
-/* line 198, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+/* line 204, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
 #work .detail > div > .description {
   width: 100%;
   height: 390px;
 }
 
-/* line 203, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+/* line 209, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
 #work .detail > div > .description p {
   font-size: 14px;
   text-align: right;
   line-height: 160%;
   color: white;
   margin-right: 10px;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
-/* line 212, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+/* line 218, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
 #work .cornice {
   margin: 5px auto;
   width: 350px;
@@ -1020,14 +1025,14 @@ div#up{
   top: -20px;
 }
 
-/* line 226, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+/* line 232, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
 #work .cornice img {
   max-width: 330px;
   max-height: 330px;
   padding: 10px;
 }
 
-/* line 232, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+/* line 238, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
 #work .indicator {
   width: 350px;
   height: 15px;
@@ -1037,7 +1042,7 @@ div#up{
   top: -15px;
 }
 
-/* line 241, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+/* line 247, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
 .round {
   display: block;
   width: 10px;
@@ -1049,13 +1054,13 @@ div#up{
   float: left;
 }
 
-/* line 252, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+/* line 258, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
 #work .indicator .active, #work .indicator > .round:hover {
   background-color: #033568;
   border: 1px solid white;
 }
 
-/* line 257, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+/* line 263, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
 #work .bottomdes {
   clear: both;
   text-align: left;
@@ -1064,17 +1069,17 @@ div#up{
   color: #2d96ff;
 }
 
-/* line 265, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+/* line 271, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
 #work .bottomdes > .entry {
   color: white;
 }
 
-/* line 269, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+/* line 275, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
 #work .bottomdes a {
   color: #2d96ff;
 }
 
-/* line 273, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
+/* line 279, /Users/danielebottillo/Documents/MyPersonalWebsite/public/scss/source/_portfolio.scss */
 #work .bottomdes a:hover {
   color: white;
 }
