@@ -68,29 +68,35 @@
 #work .menu .entry{
 	width: 100%;
 	padding-top: 10px;
-	height: 30px;
-	background-color: #FFF;
+	height: 28px;
+
 	color: $dark-color;
-	font-size: 20px;
+	font-size: 16px;
 	text-align: center;
 	cursor: pointer;
 	cursor: hand;
-	background-color: $blu-active;
+	background-color: lighten($dark-color,5);
 	color: white;
+/*	border-top: 1px solid $blu-active;*/
+	border-bottom: 1px solid $blu-active;
+}
+
+.first{
+	border-top: 1px solid $blu-active;
 }
 
 #work .dividerEntry{
 	height: 10px;
+	height: 0px;
 }
 
 #work .menu .entry:hover, #work .menu .selected{
 	background-color: $dark-color;
 	color: white;
-	border-top: 1px solid $blu-active;
-	border-bottom: 1px solid $blu-active;
-	padding-top: 9px;
+
+/*	padding-top: 9px;
 	height: 29px;
-/*	background-color: white;
+	background-color: white;
 	color: $blu-active;*/
 }
 
@@ -206,7 +212,7 @@
 	line-height: 160%;
 	color: white;
 	margin-right: 10px;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 #work .cornice{
