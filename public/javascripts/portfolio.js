@@ -43,7 +43,8 @@ function portfolio_image(index){
 }
 
 function change_work(work){
-    if (current_work === work) return "";
+	//alert (current_work === work);
+    if (current_work === work) return;
     
     current_work = work;
     
@@ -132,13 +133,13 @@ function getDescription(){
     if (current_work === "CheckIt") return "<br/>CheckIt! is a web application that can help you to manage your daily routine: you can use ToDo List to save what you have to do."+
     				"You can also use Accounting section to track your finance and see your money.";
     else if (current_work === "Wemobi") return "<br/>WeMobi is the mobile brand of Mavigex.";
-	else if (current_work === "Chariots") return "<br/>Chariots of Fire is a gruop of friends that make beatiful videoclip!";
+	else if (current_work === "Chariots") return "<br/>Website of Chariots of Fire, a group of friends that enjoy making videos!";
 	else if (current_work === "Sdf") return "<br/>Squadra dei Falchi website.";
-	else if (current_work === "Serena") return "<br/>Website of Serena Cevenini photographer.";
-	else if (current_work === "Mavigex") return "<br/>I worked two year for a company called Mavigex. I was responsible of the entire mobile applications"+
-	" creation process in HTML5, Android and iOS platforms. I also managed websites and I dealt occasionally with backend technologies as RubyOnRails and PHP.<br/><br/>"+
-	"Some of my works at Mavigex: &nbsp;&nbsp;<br/>"+
-	"Spreaker Android application - <br/> Bluvacanze Android/iOS Sencha application - <br/> Salvacontatti Sencha - <br/> i-SnowParl iOS application - <br/>";
+	else if (current_work === "Serena") return "<br/>Website of photographer Serena Cevenini.";
+	else if (current_work === "Mavigex") return "<br/>I have worked two years for a company called Mavigex. I was responsible of the entire mobile applications"+
+	" creation process in HTML5, Android and iOS platforms. I also managed websites and I occasionally dealt with backend technologies as RubyOnRails and PHP.<br/><br/>"+
+	"Some of my works at Mavigex: &nbsp;&nbsp;<br/><br/>"+
+	"Spreaker Android application - <br/> Bluvacanze Android/iOS Sencha application - <br/> Salvacontatti Sencha - <br/> i-SnowPark iOS application - <br/>";
     else return "";
 }
 
