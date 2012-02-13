@@ -1,0 +1,63 @@
+#cv{
+	
+}
+
+#cv .submenu{
+	width: 100%;
+	margin-top: 20px;
+	height: 30px;
+}
+
+#cv .submenu > a{
+	display: block;
+	width: 25%;
+	color: white;
+	float: left;
+	padding-top: 4px;
+	height: 18px;
+	text-align: center;
+	font-size: 14px;
+	box-shadow: 1px 1px 1px black;
+	background-color: $dark-color;
+}
+
+#cv .submenu > a.active{
+	background-color: $blu-active;
+		font-weight: bold;
+}
+/*
+#cv .submenu > div:first-child.active{
+	background-color: green;
+}
+
+#cv .submenu > div:nth-child(2).active{
+	background-color: red;
+}
+
+#cv .submenu > div:nth-child(3).active{
+	background-color: orange;
+}
+
+#cv .submenu > div:nth-child(4).active{
+	background-color: grey;
+}
+*/
+#cv .submenu > a.active, #cv .submenu > a:hover{
+	padding-top: 7px;
+	height: 23px;
+	font-weight: bold;
+	background-color: $blu-active;
+}
+
+#cv .pagecv{
+	width: 1040px;
+	margin: 0px auto;
+	height: 550px;
+	background-color: rgba(#000, 0.5);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+/*	-moz-box-shadow: 0 0 2px 2px white;
+	-webkit-box-shadow: 0 0 2px 2px white;
+	box-shadow: 0 0 2px 2px white;*/
+	padding: 10px;
+}

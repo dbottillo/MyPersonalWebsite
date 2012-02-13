@@ -14,21 +14,26 @@ $(document).ready(function(){
 		case "#portfolio":
 			toWork();
 			break;
+		case "#cv":
+			toCV();
+			break;
 		default:
 			toHome();
 			break;
 	}
 	
-	$('#toWork').click(function(){
+	$('.toWork').click(function(){
 
 		toWork();
 	});
 	
-	$('#toHome').click(function(){
+	$('.toHome').click(function(){
 		toHome();
 	});
 	
-
+	$('.toCV').click(function(){
+		toCV();
+	});
 	
 });
 
@@ -46,6 +51,15 @@ function toWork(){
 		onAfter:
 		function(){
 			window.location.hash = "portfolio";
+		}
+	});
+}
+
+function toCV(){
+	$.scrollTo('#cv', {duration: 700, 
+		onAfter:
+		function(){
+			window.location.hash = "cv";
 		}
 	});
 }

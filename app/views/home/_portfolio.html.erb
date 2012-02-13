@@ -1,18 +1,6 @@
 <div id="work">
 	<div class="upTable"></div>
-	<header class="header type1">
-		<!--<h2>My Work<h2>-->
-        <div class="page">
-    	    <nav>
-    	        <div class="active">
-    				Portfolio
-    			</div>	
-    			<div id="toHome">
-    				About Me
-    			</div>
-    	    </nav>
-        </div>
-	</header>
+    <%= render :partial => "shared/header", :locals => { :type => 1 } %>
 	<div class="content">
 		<div class="leftlateral"></div>
 		<div class="menu">

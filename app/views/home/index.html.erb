@@ -8,19 +8,7 @@
 	
 			<div id="home">
 	        	
-				<header class="header">
-                    <div class="page">
-    					i'm Daniele Bottillo
-    				    <nav>
-    				        <div id="toWork">
-    							Portfolio
-    						</div>	
-    						<div class="active">
-    							About Me
-    						</div>
-    				    </nav>
-                    </div>
-				</header>
+			    <%= render :partial => "shared/header", :locals => { :type => 0 } %>
 <!--				<div class="divider">	
 					<span><%= "About me" unless :type !=0 %></span>
 					<span><%= "My Work" unless :type !=1 %></span>
@@ -174,6 +162,8 @@
 			
 			
         	<%= render :partial => "portfolio" %>
+
+			<%= render :partial => "cv" %>
         
         	<%= render :partial => "shared/footer", :locals => { :type => 0 } %>
 
