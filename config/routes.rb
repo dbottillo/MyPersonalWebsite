@@ -1,6 +1,7 @@
 Mywebsite::Application.routes.draw do
 
   match '/index' => 'home#index'
+  match '/mu-942f19e0-e626e170-21f6d708-caa94ff8' => 'home#blitz'
 
   match '/portfolio' => 'home#portfolio'
 
