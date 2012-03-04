@@ -5,4 +5,8 @@ class HomeController < ActionController::Base
 
     #render :layout => false
   end
+  
+  def blitz
+    return '42'
+  end
 end
