@@ -371,12 +371,18 @@ nav div {
 }
 
 /* line 42, /Users/danielebottillo/Documents/Works/MyPersonalWebsite/public/scss/source/_header.scss */
-nav div:hover {
+nav a {
+  font-size: 20px;
+  color: #033568;
+}
+
+/* line 47, /Users/danielebottillo/Documents/Works/MyPersonalWebsite/public/scss/source/_header.scss */
+nav div:hover, nav a:hover {
   border-bottom: 5px solid #2d96ff;
   color: #2d96ff;
 }
 
-/* line 47, /Users/danielebottillo/Documents/Works/MyPersonalWebsite/public/scss/source/_header.scss */
+/* line 52, /Users/danielebottillo/Documents/Works/MyPersonalWebsite/public/scss/source/_header.scss */
 nav div.active {
   position: relative;
   font-size: 24px;
@@ -386,13 +392,13 @@ nav div.active {
   color: #2d96ff;
 }
 
-/* line 56, /Users/danielebottillo/Documents/Works/MyPersonalWebsite/public/scss/source/_header.scss */
+/* line 61, /Users/danielebottillo/Documents/Works/MyPersonalWebsite/public/scss/source/_header.scss */
 nav div:hover {
   border-bottom: 4px solid #2d96ff;
   color: #2d96ff;
 }
 
-/* line 63, /Users/danielebottillo/Documents/Works/MyPersonalWebsite/public/scss/source/_header.scss */
+/* line 68, /Users/danielebottillo/Documents/Works/MyPersonalWebsite/public/scss/source/_header.scss */
 .header span {
   float: right;
   font-size: 20px;

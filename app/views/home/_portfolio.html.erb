@@ -1,16 +1,5 @@
 <div id="work">
-	<header class="header type1">
-        <div class="page">
-    	    <nav>
-    	        <div class="active">
-    				Portfolio
-    			</div>	
-    			<div id="toHome">
-    				About Me
-    			</div>
-    	    </nav>
-        </div>
-	</header>
+	<%= render :partial => "shared/header", :locals => { :type => 1 }%>
 	<div class="content">
 		<div class="bordered">
 			<a href="javascript:leftCarousel()" class="leftarrow">
