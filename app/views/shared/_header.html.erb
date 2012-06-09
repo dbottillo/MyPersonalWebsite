@@ -1,7 +1,7 @@
-<header class="header type<%=type%>">
+<!--<<header class="header type<%=type%>">
 	<%= "i'm Daniele Bottillo" unless type !=0 %>
     <nav>
-        <!--<a href="/index.html" id="index">
+        a href="/index.html" id="index">
             <div class="<%= 'active' unless type != 0%>">&lt;Me&gt;</div>
         </a>
         <a href="/portfolio.html" id="portfolio">
@@ -10,10 +10,30 @@
         <a href="/social.html" id="social">
             <div class="<%= 'active' unless type != 2%>">&lt;Curriculum&gt;</div>
         </a>
-    </nav>-->
+    </nav>
  	<%= "i'm Daniele Bottillo" unless type !=1 %>
 </header>
 <div class="divider">	
 	<span><%= "About me" unless type !=0 %></span>
 	<span><%= "My Work" unless type !=1 %></span>
-</div>
+</div>-->
+
+
+
+<header class="header type<%=type%>">
+    <div class="page">
+		<%=type%>
+		<%= "i'm Daniele Bottillo" unless type !=0 %>
+	    <nav>
+			<div>
+				<a href="http://blog.danielebottillo.com" target="_blank">Blog</a>
+			</div>
+	        <div id="<%= 'toWork' if type == 0 %>" class="<%= 'active' if type == 1 %>">
+				Portfolio
+			</div>	
+			<div id="<%= 'toHome' if type == 1 %>" class="<%= 'active' if type == 0 %>">
+				About Me
+			</div>
+	    </nav>
+    </div>
+</header>

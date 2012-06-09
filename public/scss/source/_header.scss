@@ -39,7 +39,12 @@ nav div{
 
 }
 
-nav div:hover{
+nav a{
+	font-size: 20px;
+	color: $dark-color;
+}
+
+nav div:hover, nav a:hover{
     border-bottom: 5px solid $blu-active;
 	color: $blu-active;
 }
