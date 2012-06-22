@@ -10,7 +10,10 @@ end
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2'
+#gem 'mysql2'
+group :production do
+  gem "pg"
+end
 
 gem 'compass'
 
