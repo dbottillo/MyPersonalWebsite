@@ -1,0 +1,49 @@
+.social{
+	margin-top: 40px;
+}
+
+.social h1{
+	float: left;
+	@include text-rotate(-3deg);	
+}
+
+.spaces{
+    clear: both;
+    margin-top: 40px;   
+}
+
+.social .linkedin{
+    width: 400px;   
+    height: 160px;
+	position: relative;
+	top: 20px;
+	left: 50px;
+    float: left;
+	@include bg-loading;
+}
+
+.social .twitter{
+    float: left;
+    width: 320px;
+    height: 260px;
+    position: relative;
+    left: 100px;
+	@include bg-loading;
+}
+
+.social .other{
+	width: 200px;
+	float: left;
+	position: relative;
+    left: 150px;
+}
+
+.social .other a{
+    margin-left: 15px;
+    float: left;
+    display: block;
+}
+
+.social .other a:hover{
+    @include text-rotate(25deg);    
+}

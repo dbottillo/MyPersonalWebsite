@@ -4,15 +4,30 @@ var index_active = 0;
 
 $(document).ready(function(){
 	change_work(works[0]);
+	
+	$('#on_off').click(function(){
+		if ($('#floating').height() > 100){
+			move_floating(40,"Open");
+		}else{
+			move_floating(210,"Close");
+		}
+	});
 });
 
+function move_floating(height, text){
+	$('#floating').animate({
+    	height: height
+  	}, 500, function() {
+    // Animation complete.
+		$('#on_off').html(text);
+ 	});
+}
+
 function portfolio_imageloaded(){
-//	console.log("loaded");
 	$('#carousel > img').show();
 }
 
-//var works = ['Wemobi','Mavigex','Serena','CheckIt', 'Sdf','Chariots'];
-var works = ['Comunichiamo', 'Wemobi','Mavigex','Serena','CheckIt', 'Sdf'];
+var works = ['Comunichiamo','Wemobi','Mavigex','Serena','Aclick', 'Sdf'];
 
 function rightCarousel(){
 	if (index_active == 5) {
@@ -43,10 +58,10 @@ function portfolio_image(index){
         if (index === 0) $('#carousel > img').attr("src","/images/work/wemobi/uno.jpg");
         if (index === 1) $('#carousel > img').attr("src","/images/work/wemobi/due.jpg");
         if (index === 2) $('#carousel > img').attr("src","/images/work/wemobi/tre.jpg");
-    }else if (current_work === "Chariots"){
-        if (index === 0) $('#carousel > img').attr("src","/images/work/chariots/uno.jpg");
-        if (index === 1) $('#carousel > img').attr("src","/images/work/chariots/due.jpg");
-        if (index === 2) $('#carousel > img').attr("src","/images/work/chariots/tre.jpg");
+    }else if (current_work === "Aclick"){
+        if (index === 0) $('#carousel > img').attr("src","/images/work/aclick/uno.jpg");
+        if (index === 1) $('#carousel > img').attr("src","/images/work/aclick/due.jpg");
+        if (index === 2) $('#carousel > img').attr("src","/images/work/aclick/tre.jpg");
     }else if (current_work === "Sdf"){
         if (index === 0) $('#carousel > img').attr("src","/images/work/sdf/uno.jpg");
         if (index === 1) $('#carousel > img').attr("src","/images/work/sdf/due.jpg");
@@ -104,7 +119,7 @@ function change_work(work){
 function getTitle(){
     if (current_work === "CheckIt") return "CheckIt!";
     else if (current_work === "Wemobi") return "Wemobi";
-	else if (current_work === "Chariots") return "Chariots";
+	else if (current_work === "Aclick") return "A click for two";
 	else if (current_work === "Sdf") return "<span style='font-size: 18px'>Squadra dei Falchi</span>";
 	else if (current_work === "Serena") return "<span style='font-size: 18px'>Serena Cevenini</span>";
 	else if (current_work === "Mavigex") return "Mavigex";
@@ -115,7 +130,7 @@ function getTitle(){
 function getCommitment(){
     if (current_work === "CheckIt") return "Myself";
     else if (current_work === "Wemobi" || current_work === "Mavigex") return "<a href='http://www.mavigex.com' target='_blank'>Mavigex S.r.l.</a>";
-	else if (current_work === "Chariots") return "Myself & my friends";
+	else if (current_work === "Aclick") return "Serena Cevenini & Alice Coppola";
 	else if (current_work === "Sdf") return "Squadra dei Falchi association";
 	else if (current_work === "Serena") return "Serena Cevenini";
 	else if (current_work === "Mavigex") return "Mavigex";
@@ -126,7 +141,7 @@ function getCommitment(){
 function getYearCommitment(){
     if (current_work === "CheckIt") return "2011";
     else if (current_work === "Wemobi") return "2011";
-	else if (current_work === "Chariots") return "2007";
+	else if (current_work === "Aclick") return "2012";
 	else if (current_work === "Sdf") return "2009";
 	else if (current_work === "Serena") return "2012 (still under construction)";
 	else if (current_work === "Mavigex") return "2009-2010";
@@ -142,9 +157,9 @@ function updateLink(){
         $('#link_commitment').attr('href','http://www.wemobi.it');
         $('#link_commitment').text("http://www.wemobi.it");
         //return "<a href='http://www.mavigex.com' target='_blank'>Mavigex S.r.l.</a>";
-    }else if (current_work === "Chariots") {
-        $('#link_commitment').attr('href','http://www.chariots.it');
-        $('#link_commitment').text("http://www.chariots.it");
+    }else if (current_work === "Aclick") {
+        $('#link_commitment').attr('href','http://www.aclickfortwo.com');
+        $('#link_commitment').text("http://www.aclickfortwo.com");
         //return "<a href='http://www.mavigex.com' target='_blank'>Mavigex S.r.l.</a>";
     }else if (current_work === "Sdf") {
         $('#link_commitment').attr('href','http://www.squadrafalchi.it/');
@@ -169,13 +184,13 @@ function getDescription(){
     if (current_work === "CheckIt") return "<br/>CheckIt! is a web application that can help you to manage your daily routine: you can use ToDo List to save what you have to do."+
     				"You can also use Accounting section to track your finance and see your money.";
     else if (current_work === "Wemobi") return "<br/>WeMobi is the mobile brand of Mavigex.";
-	else if (current_work === "Chariots") return "<br/>Website of Chariots of Fire, a group of friends that enjoy making videos!";
+	else if (current_work === "Aclick") return "<br/>Wedding & family photography.";
 	else if (current_work === "Sdf") return "<br/>Squadra dei Falchi website.";
 	else if (current_work === "Serena") return "<br/>Website of photographer Serena Cevenini.";
 	else if (current_work === "Mavigex") return "<br/>I have worked two years for a company called Mavigex. I was responsible of the entire mobile applications"+
-	" creation process in HTML5, Android and iOS platforms. I also managed websites and I occasionally dealt with backend technologies as RubyOnRails and PHP.<br/><br/>"+
-	"Some of my works at Mavigex: &nbsp;&nbsp;<br/><br/>"+
-	"Spreaker Android application - <br/> Bluvacanze Android/iOS Sencha application - <br/> Salvacontatti Sencha - <br/> i-SnowPark iOS application - <br/>";
+	" creation process in HTML5, Android and iOS platforms. I also managed websites and I occasionally dealt with backend technologies as RubyOnRails and PHP.&nbsp;&nbsp;"+
+	"Some of my works at Mavigex: &nbsp;&nbsp;<br/>"+
+	"Spreaker for Android - &nbsp;&nbsp; Bluvacanze Android/iOS Sencha - &nbsp;&nbsp; Salvacontatti Sencha - &nbsp;&nbsp; i-SnowPark iOS";
 	else if (current_work === "Comunichiamo") return "<br/>Android version of the ComuniChiamo italian service.";
     else return "";
 }
@@ -183,10 +198,11 @@ function getDescription(){
 function getTecnologies(){
     if (current_work === "CheckIt") return "Chrome, HTML5, CSS3, JQuery, Javascript, ChromeWebStore, RubyOnRails, MongoDb";
     else if (current_work === "Wemobi") return "HTML5, CSS3, JQuery, Javascript, PHP, Canvas";
-    else if (current_work === "Chariots") return "HTML, CSS, PHP, Flash";
+    else if (current_work === "Aclick") return "HTML, CSS, Ruby on Rails, Mysql, ActiveAdmin";
 	else if (current_work === "Sdf") return "HTML, CSS, PHP, Mysql";
 	else if (current_work === "Serena") return "HTML, CSS, Ruby on Rails, Mysql, Flickr";
-	else if (current_work === "Mavigex") return "HTML5, CSS, Javascript, Sencha, JQuery, Android, ObjectiveC, PHP, Ruby on Rails, Mysql, Git, PhoneGap";
+	else if (current_work === "Mavigex") return "HTML5, CSS, Sencha, JQuery, Android, ObjectiveC, PHP, RubyOnRails, Git, PhoneGap";
 	else if (current_work === "Comunichiamo") return "Android, REST, HTML, CSS, Bitbucket, Git";
     else return "";
 }
+
