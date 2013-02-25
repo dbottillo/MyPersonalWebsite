@@ -1,7 +1,7 @@
 Mywebsite::Application.routes.draw do
 
   match '/index' => 'home#index'
-
+  match '/json' => 'home#json'
   match '/portfolio' => 'home#portfolio'
 
   # The priority is based upon order of creation:

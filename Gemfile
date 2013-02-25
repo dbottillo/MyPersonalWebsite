@@ -18,9 +18,11 @@ group :development do
   gem "sqlite3"
 end
 
-
+gem 'oauth'
 # Use unicorn as the web server
 gem 'unicorn'
+
+gem 'json', '>= 1.7.7'
 
 # Deploy with Capistrano
 # gem 'capistrano'
