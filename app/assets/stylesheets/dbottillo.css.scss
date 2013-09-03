@@ -8,6 +8,8 @@ $blu-active: #2D96FF;
 $color-active: #336699;
 $color-active: #FFF;
 
+$bg-light: #1f7baf;
+
 @import 'source/reset';
 @import 'source/mixin';
 @import 'source/base';
@@ -16,3 +18,4 @@ $color-active: #FFF;
 @import 'source/skill';
 @import 'source/aboutme';
 @import 'source/portfolio';
+@import 'source/actions';

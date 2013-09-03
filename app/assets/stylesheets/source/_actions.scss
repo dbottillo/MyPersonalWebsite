@@ -1,0 +1,36 @@
+.actions{
+    font-size: 16px;
+    line-height: 160%;
+}
+
+
+.actions h1{
+    width: 120px;
+    margin: 0px auto;
+}
+
+.btn_container{
+	width: 250px;
+	margin: 0px auto;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.btn_download{
+	display: block;
+    width: 130px;
+    padding: 5px 10px;
+    height: 25px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 16px;
+    color: $blu;
+    border-radius: 3px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.btn_download:hover{
+    background-color: $dark-color;
+    color: white;
+}

@@ -1,89 +1,27 @@
-#home{
-	height: 720px;
-}
-
 .left{
-    width: 468px;
-    height: 320px;
+    width: 400px;
+    height: 160px;
     float: left;
-	position: absolute;
-	background-image: url('/images/table.png');
+    padding-top: 10px;   
+    /*position: absolute;
+    background-image: url('/images/table.png');*/
 }
 
-.left div:first-child{
-	top: 120px;
-	position: relative;
-	left: 100px;
-	@include text-rotate(2deg);
-	line-height: 130%;
-}
-
-.left div:first-child, .left div:first-child a{
-	font-size: 18px;
-	color: $dark-color;
-	font-family: 'Gochi Hand', cursive;
-	line-height: 120%;
-}
-
-.left div:first-child a:hover{
-	border-bottom: 5px solid $blu-active;
-	color: $blu-active;
-}
-
-.left div:nth-child(2){
-	display: block;
-	font-size: 22px;
-	color: white;
-	text-shadow: 1px 1p 1px black;
-	font-family: 'Gochi Hand', cursive;
-	top: 285px;
-	position: relative;
-	left: 270px;
-	cursor: pointer;
-	cursor: hand;
-	@include text-rotate(2deg);
-}
-
-.left div:nth-child(2):hover{
-	top: 290px;
-	left: 275px;
-	@include text-rotate(4deg);
+.linkedin{
+    width: 370px;   
+    height: 160px;
+	@include bg-loading;
+	margin: 0px auto;
 }
 
 .right{
-    width: 580px;
+    width: 684px;
     height: 320px;
-	position: relative;
-	top: 20px;
-	left: 495px;
-	color: white;
-	font-size: 15px;
-	line-height: 125%;
-	text-align: right;
-}
-
-.right h1{
-	width: 200px;
-	float: right;
-	@include text-rotate(3deg);	
-}
-
-.btn_download{
-    display: block;
-    width: 130px;
-    padding-top: 5px;
-    height: 25px;
-    background-color: white;
-    float: right;
-    font-weight: bold;
-    font-size: 16px;
-    color: $dark-color;
-    border-radius: 3px;
-    text-align: center;
-}
-
-.btn_download:hover{
-    background-color: $dark-color;
+    position: relative;
     color: white;
-    border: 1px solid white;
+    font-size: 15px;
+    line-height: 125%;
+    text-align: center;
+    float: left;
 }
+

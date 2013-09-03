@@ -1,20 +1,21 @@
 .header{
     width: 100%;
-    height: 40px;
-    margin: 0px auto;
-    position: relative;
-	top: 20px;
-	padding: 10px 0px;
-	background: rgba(255,255,255,0.99);
-	font-size: 47px;
-	color: $dark-color;
-	text-shadow: lighten($dark-color, 10) 1px 1px 1px;
+    height: 30px;
+    
+    text-align: center;
+    padding: 20px;
+	
+	
+    
 }
 
-.type1{
-	height:20px;
-	top: 0px;
+.header h1{
+    font-size: 35px;
+    color: white;
+    width: 400px;
+    margin: 0px auto;
 }
+
 
 nav{
     float: right;

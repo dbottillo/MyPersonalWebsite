@@ -1,14 +1,23 @@
-#work {
-	padding-top: 10px;
-}
-
 #work > h1{
-	float: right;
-	@include text-rotate(3deg);	
+	margin-left: 20px;
+	width: 140px;
 }
 
 #work h2{
 	font-size: 16px;
+}
+
+.portfolio{
+	line-height: 180%;
+}
+
+.portfolio a{
+	font-size: 18px;
+	color: white;
+}
+
+.portfolio a:hover{
+	color: $blu-active;
 }
 
 #work .content{

@@ -1,25 +1,16 @@
 <!DOCTYPE>
 <html>
-    <%= render :partial => "shared/head", :locals => { :type => 0 } %>
+    <%= render :partial => "shared/head"%>
     
     <body>
-        
-        <div class="container">
 	
-			<div id="home">
-	        	<%= render :partial => "shared/header", :locals => { :type => 0 }%>
+		<%= render :partial => "shared/header"%>
 	
-				<%= render :partial => "shared/top" %>
-	
-                <%= render :partial => "shared/social" %>
+		<%= render :partial => "shared/top" %>
 
-			</div>
-			
-			
-        	<%= render :partial => "shared/portfolio" %>
-        
-        	<%= render :partial => "shared/footer", :locals => { :type => 0 } %>
+		<%= render :partial => "shared/middle" %>
 
-		</div>
+		<%= render :partial => "shared/footer" %>
+		
     </body>
 </html>
