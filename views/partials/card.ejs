@@ -1,0 +1,28 @@
+<dom-module id="portfolio-card">
+
+  <template>
+    <!-- bind to the "owner" property -->
+    <div class="portfolio-card-container">
+    <paper-card heading="{{title}}">
+          <div class="card-content">{{title}}</div>
+          <div class="card-actions">
+            <paper-button>Some action</paper-button>
+          </div>
+        </paper-card>
+        </div>
+  </template>
+
+  <script>
+    Polymer({
+      is: "portfolio-card",
+      properties: {
+        // declare the owner property
+        title: {
+          type: String,
+          value: ""
+        }
+      }
+    });
+  </script>
+  
+</dom-module>
